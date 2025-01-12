@@ -1,3 +1,7 @@
+/* This file contains the CSS styles for the ICT final project. 
+    It includes styles for the body, selection, navigation buttons, logo, 
+    background image, main content, and media queries for responsive design. */
+
 body{
     background-color: #f3f4f4;
     font-family: "Spectral",sans-serif;

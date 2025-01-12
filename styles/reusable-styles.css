@@ -1,3 +1,9 @@
+/*
+ * This file contains reusable styles for the web application.
+ * It includes common utility classes that can be used throughout the website.
+ * The purpose of this file is to provide a set of predefined styles for consistency and reusability.
+ * Ensure to follow the naming conventions and structure for maintainability and scalability.
+ */
 * {
     margin: 0;
     padding: 0;

@@ -1,3 +1,14 @@
+/* 
+This CSS file provides styling for the mental health section of the website, including:
+
+1. Container styles for the mental health section, ensuring a flexible and responsive layout.
+2. Left column styles, including layout and spacing for headings, descriptions, and links.
+3. Right column styles, focusing on centering content vertically.
+4. Styling for mindfulness steps, including list appearance and step numbering.
+5. Custom styles for images, including hover effects.
+6. Responsive design adjustments for smaller screens.
+*/
+
 /* Container Styles */
 .mental-health-section {
   width: 90%;
