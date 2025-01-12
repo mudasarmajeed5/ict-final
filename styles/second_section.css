@@ -1,0 +1,127 @@
+.section-2 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.robert-desc {
+    line-height: 1.5;
+}
+
+.music-box {
+    background-color: white;
+    width: 90%;
+}
+
+.audio-player {
+    width: 300px;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.audio-bar {
+    width: 100%;
+    height: 5px;
+    background: #555;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background: #1db954;
+    border-radius: 5px;
+}
+
+.controls {
+    margin-top: 10px;
+}
+.section-cards-head{
+    justify-content: space-around;
+}
+.cards-section{
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.card {
+    position: relative; 
+}
+
+.card:hover .text-2xl {
+    cursor: pointer;
+}
+
+.card .text-2xl {
+    font-size: 22px;
+    width: fit-content;
+    position: relative;
+    display: inline-block; 
+}
+
+.card .text-2xl::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black; 
+    transition: width 0.3s ease; 
+}
+
+.card:hover .text-2xl::before {
+    width: 100%;
+}
+
+.card>img{
+    transition: all 0.3s ease;
+    width: 350px;
+    object-fit: cover;
+    object-position: center;
+    height: 250px;
+}
+.card>img:hover{
+    scale: 105%;
+}
+.card{
+    font-family: sans-serif;
+    overflow: hidden;
+    background-color: #e3e5e5;
+    justify-content: space-between;
+}
+.marginLeft{
+    margin-left: -25px;
+}
+/* media queries styles that only apply to devices having maximum width upto 767px */
+@media only screen and (max-width:767px) {
+    .section-2 {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .robert-waldinger-image {
+        width: 80%;
+        border-radius: 10px;
+    }
+    .music-box {
+        width: 95%;
+    }
+    .section-cards-head{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .card{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .card>img{
+        width: 100%;
+    }
+}

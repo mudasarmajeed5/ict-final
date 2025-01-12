@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.border{
+    border:2px solid black;
+}
+/* flexbox common classes */
+.flex{
+    display: flex;
+}
+.underline{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: all 0.2s ease;
+}
+.underline:hover{
+    text-underline-offset: 4px;
+}
+.items-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-end{
+    justify-content: end;
+}
+.gap-2{
+    gap: 1rem;
+}
+.flex-col{
+    flex-direction: column;
+}
+
+.text-black{
+    color: black;
+}
+.text-white{
+    color: white;
+}
+.bg-black{
+    background-color: black;
+}
+.bg-white{
+    border-left: white;
+}
+.px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.py-1{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+.transition-all{
+    transition: all 0.3s ease;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-xl{
+    font-size: 1.5rem;  
+}
+.text-2xl{
+    font-size: 2rem;
+}
+.text-3xl{
+    font-size: 2.5rem;
+}
+.text-4xl{
+    font-size: 3rem;
+}
+.font-bold{
+    font-weight: bold;
+}
+.text-sm{
+    font-size: 0.8rem;
+}
+.justify-start{
+    justify-content: start;
+}
+.p-4{
+    padding: 1rem;
+}
+.p-3{
+    padding: 0.8rem;
+}
+/* font family */
+.font-mono{
+    font-family: monospace;
+}
+.font-serif{
+    font-family: sans-serif;
+}
+.mx-auto{
+    margin: 0 auto;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.rounded-md{
+    border-radius: 16px;
+}
+.m-1{
+    margin: 0.5rem;
+}
+.mt-2{
+    margin: 0.5rem 0;
+}
+.text-gray{
+    color: rgb(82, 82, 82);
+}
+/* width classes */
+.margin{
+    margin: 30px 0px;
+}

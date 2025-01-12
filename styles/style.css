@@ -1,0 +1,151 @@
+body{
+    background-color: #f3f4f4;
+}
+::selection {
+    background-color: #333333; 
+    color: white; 
+}
+::-webkit-selection {
+    background-color: #333333; 
+    color: white; 
+}
+
+.navButton:hover{
+    background-color: #202020;
+    cursor:pointer;
+}
+.navButton1{
+    border: transparent;
+    border-right: 1px solid rgba(255, 255, 255, 0.33);
+}
+.navButton{
+    padding: 25px;
+}
+.logo{
+    width: 55px;
+    height: 50px;
+}
+.logoContainer{
+    padding-top: 13px;
+    padding-left: 28px;
+    font-family: monospace;
+}
+.spacing{
+    font-size: 28px;
+    color: rgb(59, 11, 11);
+    letter-spacing: 2px;
+}
+.text-logo{
+    color: rgb(59, 11, 11);
+    letter-spacing: 2px;
+}
+.background_Image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -50;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center;
+}
+.white_wrap {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -49;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1));
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+
+}
+.main_div_heading{
+    font-size: 6rem;
+}
+.main_div_para{
+    line-height: 1.5;
+}
+.margins{
+    height: 30vh;
+}
+.second_page_image1{
+    height: 400px;
+}
+.heading1{
+    font-size: 48px;
+}
+.second_page{
+    gap: 25px;
+    /* flex-direction: row; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 10vh auto;
+}
+.main_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    flex-direction: column;
+}
+.main_div_para{
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 624px;
+    font-size: 18px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    
+}
+
+.setOpacity{
+    opacity: 0.7;
+}
+.setOpacity:hover{
+    opacity: 1;
+}
+
+/* media queries styles that only apply to devices having maximum width upto 767px */
+@media only screen and (max-width:767px){
+    .main_div_heading{
+        font-size: 3.5rem;
+        color:rgb(75, 23, 23);
+    }
+    .main_div_para{
+        width: 80%;
+        color:rgb(75, 23, 23);
+    }
+    .spacing{
+        font-size: 22px;
+    }
+    .text-logo{
+        font-size:12px;
+    }
+    .navButton>span{
+        display:none;
+    }
+    .white_nav{
+        background-color: rgb(113, 47, 47);
+    }
+    .margins{
+        margin:10vh 0px;
+    }
+    .second_page{
+        flex-direction: column;
+    }
+    .second_page_image1{
+        width: 100%;
+    }
+    .second_page_2{
+        width: 90%;
+    }
+    .second_page_text2{
+        width: 100%;
+    }
+}

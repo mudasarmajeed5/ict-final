@@ -1,0 +1,111 @@
+.menuToggle {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Fullscreen menu hidden by default */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+    font-family: 'Poppins', sans-serif;
+}
+.menuToggle:checked ~ .fullscreen-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Other styles remain the same */
+.bottomnav {
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    white-space: nowrap;
+    overflow-x: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.bottomnav a {
+    color: white;
+    font-size: 18px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.menu-list li {
+    margin: 10px 35px;
+    font-size: 36px;
+}
+
+.navLink {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    width: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navLink:hover {
+    cursor: pointer;
+}
+
+.navLink::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navLink:hover::before {
+    width: 100%;
+}
+
+.navLink:hover {
+    color: #f0f0f0;
+}
+
+/* media queries styles that only apply to devices having maximum width upto 767px */
+@media only screen and (max-width:757px) {
+    .bottomnav a {
+        color: white;
+        font-size: 18px;
+    }
+    .nav-icon {
+        stroke: black;
+    }
+}

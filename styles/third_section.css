@@ -1,0 +1,119 @@
+/* Container Styles */
+.mental-health-section {
+  width: 90%;
+  margin:0 auto;
+  font-family: sans-serif;
+  display: flex;
+  gap: 20px;
+  align-items: stretch; /* Ensures both columns are the same height */
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows content to wrap for smaller screens */
+  
+}
+
+/* Left Column Styles */
+.mental-health-left {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mental-health-heading {
+  font-size: 46px;
+}
+
+.mental-health-description {
+  font-size: 18px;
+}
+
+.mental-health-link {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mental-health-link:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.mental-health-image {
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Right Column Styles */
+.mental-health-right {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers the steps vertically */
+}
+
+/* Mindfulness Steps */
+.mindfulness-steps {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mindfulness-steps li {
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-size: 18px;
+}
+
+.step-number {
+  font-size: 38px;
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+  color: #8B0000;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Image Custom Styles */
+.mental_health_img {
+  width: 80%;
+  margin: 0 auto;
+  transition: all 0.3s ease; /* Added proper transition timing syntax */
+}
+
+.mental_health_img:hover {
+  scale: 105%; /* Smooth hover effect */
+}
+
+/* Responsive Styles */
+
+/* media queries styles that only apply to devices having maximum width upto 767px */
+@media (max-width: 767px) {
+  .mental-health-section {
+    flex-direction: column;
+  }
+  
+  .mental-health-left, 
+  .mental-health-right {
+    max-width: 100%;
+  }
+
+  .mental_health_img {
+    width: 95%;
+  }
+  
+  .mental_health_img:hover {
+    scale: 105%;
+  }
+  .books{
+    flex-direction: column;
+  }
+}

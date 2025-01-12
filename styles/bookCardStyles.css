@@ -1,0 +1,84 @@
+.book-responsive {
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center the items horizontally */
+    padding: 20px; /* Padding around the container */
+}
+
+.book-card {
+    position: relative;
+    overflow: hidden;
+    width: calc(33.333% - 20px); /* Default: 3 cards per row using the calculate function in css */
+    height: 500px; /* Ensures a consistent height */
+    flex: 1 1 calc(33.333% - 20px); /* Responsive size control using calculate function */
+    max-width: 350px; /* Limit maximum width for larger screens */
+    box-sizing: border-box; /* Include padding and borders in width/height */
+}
+
+
+.book-card > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease;
+}
+
+.book-card > img:hover {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.8) 80%);
+    pointer-events: auto; /* Allow hover detection */
+    transition: all 0.3s ease; /* Smooth transition for background color */
+}
+
+
+.overlay:hover {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+}
+
+.book-details-section {
+    position: absolute;
+    width: 100%;
+    bottom: 10%; /* Adjusted for better positioning */
+    color: white;
+    text-align: center;
+}
+
+.book-details {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.book-responsive{
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 1024px) {
+    .book-card {
+        width: calc(50% - 20px); /* 2 cards per row on medium screens */
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .book-card {
+        width: calc(100% - 20px); /* 1 card per row on small screens */
+        flex: 1 1 calc(100% - 20px);
+    }
+
+    .book-details-section {
+        bottom: 5%; /* Adjust spacing for small screens */
+    }
+
+    .items-center {
+        font-size: 1rem; /* Smaller font for phones */
+    }
+}
