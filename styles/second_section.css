@@ -96,6 +96,8 @@
     justify-content: space-between;
 }
 .marginLeft{
+    font-size: 12px;
+    font-family: sans-serif;
     margin-left: -25px;
 }
 /* media queries styles that only apply to devices having maximum width upto 767px */
